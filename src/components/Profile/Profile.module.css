@@ -1,0 +1,37 @@
+.profile {
+  /* display: block; */
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  max-width: 480px;
+
+  background-color: #e7ecf2;
+}
+
+.description {
+  padding: 0 15px;
+}
+
+.avatar {
+}
+
+.name {
+}
+
+.tag {
+}
+
+.location {
+}
+
+.stats {
+  border: 1px solid #e5eaf1;
+  background-color: #f3f6f9;
+}
+
+.label {
+}
+
+.quantity {
+}
