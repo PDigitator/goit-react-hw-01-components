@@ -6,26 +6,39 @@ export const TransactionHistory = ({ items }) => {
   return (
     <div className={css.transactions}>
       <div className={css.container}>
-        <table className={css.transactions__history}>
-          <thead>
-            <tr>
-              <th>Type</th>
-              <th>Amount</th>
-              <th>Currency</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            {items.map(({ id, type, amount, currency }) => (
-              <tr key={id} className={css.item}>
-                <td>{type}</td>
-                <td>{amount}</td>
-                <td>{currency}</td>
+        <div className={css.wrap}>
+          <table className={css.transactions__history} cellPadding="15px">
+            <thead className={css.head}>
+              <tr>
+                <th>Type</th>
+                <th>Amount</th>
+                <th>Currency</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+
+            <tbody className={css.body}>
+              {items.map(({ id, type, amount, currency }) => (
+                <tr key={id} className={css.row}>
+                  <td>{type}</td>
+                  <td>{amount}</td>
+                  <td>{currency}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );
+};
+
+TransactionHistory.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    })
+  ),
 };
