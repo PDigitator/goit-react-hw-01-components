@@ -41,7 +41,6 @@
 }
 
 .name {
-  margin: auto;
   margin-bottom: 20px;
 
   font-size: 26px;
@@ -50,7 +49,6 @@
 }
 
 .tag {
-  margin: auto;
   margin-bottom: 20px;
 
   font-size: 18px;
@@ -58,8 +56,6 @@
 }
 
 .location {
-  margin: auto;
-
   font-size: 18px;
   color: #768696;
 }
@@ -68,7 +64,6 @@
   display: flex;
   justify-content: center;
 
-  margin: auto;
   padding: 0;
 
   background-color: #f3f6f9;
