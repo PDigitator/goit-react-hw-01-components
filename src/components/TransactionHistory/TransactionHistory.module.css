@@ -24,6 +24,7 @@
 .transactions__history {
   width: 100%;
   padding: 20px;
+  table-layout: fixed;
   border-collapse: collapse;
 }
 
@@ -53,6 +54,8 @@
 
 th,
 td {
+  padding: 15px 0;
+
   border-right: 1px solid #e5eaf1;
   border-bottom: 1px solid #e5eaf1;
 }

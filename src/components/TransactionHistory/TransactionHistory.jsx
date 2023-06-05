@@ -7,7 +7,7 @@ export const TransactionHistory = ({ items }) => {
     <div className={css.transactions}>
       <div className={css.container}>
         <div className={css.wrap}>
-          <table className={css.transactions__history} cellPadding="15px">
+          <table className={css.transactions__history}>
             <thead className={css.head}>
               <tr>
                 <th>Type</th>
