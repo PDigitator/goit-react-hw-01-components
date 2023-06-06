@@ -45,9 +45,9 @@
 }
 
 .item {
-  flex-basis: calc(100% / 4);
+  flex-basis: calc(100% / 5);
 
-  padding: 20px 0;
+  padding: 15px 0;
   border: 1px solid #e5eaf1;
 }
 
